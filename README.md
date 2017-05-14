@@ -14,7 +14,7 @@ Usage
 ```js
 const separatedAttributes = require('separated-attributes');
 
-// for getting attributes, see [Potent Tools](https://github.com/gburtini/Potent-Tools-for-XPath).
+// for getting attributes, see Potent Tools: https://github.com/gburtini/Potent-Tools-for-XPath
 const attributes = getAttributes(domElement);
 /*
  {
@@ -30,7 +30,7 @@ console.log(parsedAttributes);
    class: ['a', 'b', 'c'],
    name: 'bob'
  }
- */
+*/
  ```
 
 Methods

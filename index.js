@@ -3,7 +3,7 @@ const ATTRIBUTE_SEPARATORS = {
   rel: ' ',
   rev: ' ',
   style: ';',
-  media: ','
+  media: ',',
 };
 
 function isSeparatedAttribute(name) {
@@ -22,7 +22,7 @@ function splitAttributes(map) {
   const retVal = Object.assign({}, map);
 
   for (const key in retVal) {
-    retVal[key] = splitAttribute(key, retVal[key])
+    retVal[key] = splitAttribute(key, retVal[key]);
   }
 
   return retVal;

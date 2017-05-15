@@ -14,10 +14,10 @@ or
 Usage
 -----
 ```js
-const separatedAttributes = require('separated-attributes');
+const { splitAttributes } = require('separated-attributes');
 
 // for getting attributes, see Potent Tools: https://github.com/gburtini/Potent-Tools-for-XPath
-const attributes = getAttributes(domElement);
+const attributes = getAttributesFromSomewhereElse(domElement);
 /*
  {
    class: 'a b c',
@@ -25,7 +25,7 @@ const attributes = getAttributes(domElement);
  }
 */
 
-const parsedAttributes = separatedAttributes.splitAttributes(attributes);
+const parsedAttributes = splitAttributes(attributes);
 console.log(parsedAttributes);
 /*
  {
@@ -37,6 +37,6 @@ console.log(parsedAttributes);
 
 Methods
 -------
-- `isSeparatedAttribute(attributeName)`: returns a truthy separator for attributeName or `false` if this is not a separated attribute.
+- `isSeparatedAttribute(attributeName)`: returns a truthy separator for `attributeName` or `false` if this is not a separated attribute.
 - `splitAttribute(name, value)`: splits `value` based on the rule for attributes called `name`, e.g., classes split on spaces, media queries split on commas, styles split on semicolons.
-- `splitAttributes(map)`: splits all the attributes in the map, using their key as their name.
+- `splitAttributes(map)`: splits all necessary attributes in `map`, using their key as their name.

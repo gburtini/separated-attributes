@@ -1,5 +1,7 @@
 separated-attributes
 ====================
+[![Build Status](https://travis-ci.org/gburtini/separated-attributes.svg?branch=master)](https://travis-ci.org/gburtini/separated-attributes) [![Known Vulnerabilities](https://snyk.io/test/github/gburtini/separated-attributes/badge.svg)](https://snyk.io/test/github/gburtini/separated-attributes) [![npm version](https://badge.fury.io/js/separated-attributes.svg)](https://badge.fury.io/js/separated-attributes)
+
 
 Very simple NPM package for working with separated attributes in HTML, e.g., `class="hello world"` -> `{ class: ['hello', 'world'] }`.
 

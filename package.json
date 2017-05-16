@@ -12,5 +12,9 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gburtini/separated-attributes.git"
   }
 }
